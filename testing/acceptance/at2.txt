@@ -1,0 +1,24 @@
+--same name error
+new_game("Jack","Jack")
+
+-- name does not start A-Z
+new_game("","two")
+
+new_game("Xavier","Ora")
+
+-- Jack is not one of the players
+play("Jack",1)
+
+-- not this player's turn
+play("Ora", 7)
+
+play("Xavier",1)
+
+-- button already taken
+play("Ora", 1)
+
+play("Ora", 2)
+
+play_again
+
+new_game("Pete","Tim")

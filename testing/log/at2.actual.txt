@@ -1,0 +1,76 @@
+  ok:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("Jack","Jack")
+  names of players must be different:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("","two")
+  name must start with A-Z or a-z:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("Xavier","Ora")
+  ok: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Jack",1)
+  no such player: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",7)
+  not this player's turn: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",1)
+  ok: => Ora plays next
+  X__
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",1)
+  button already taken: => Ora plays next
+  X__
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",2)
+  ok: => Xavier plays next
+  XO_
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play_again
+  finish this game first: => Xavier plays next
+  XO_
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->new_game("Pete","Tim")
+  ok: => Pete plays next
+  ___
+  ___
+  ___
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
